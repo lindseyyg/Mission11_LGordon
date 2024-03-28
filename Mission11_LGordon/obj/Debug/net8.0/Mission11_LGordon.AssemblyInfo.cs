@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_LGordon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0972128019158669c3a0d6162cb056a1a4cd5993")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+890f7092dbbef101dff542a9c83477e0275a2c6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_LGordon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_LGordon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
