@@ -138,3 +138,4 @@
 /Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/obj/Debug/net8.0/Mission11_LGordon.genruntimeconfig.cache
 /Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/obj/Debug/net8.0/ref/Mission11_LGordon.dll
 /Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/obj/Debug/net8.0/Mission1.92554B89.Up2Date
+/Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/obj/Debug/net8.0/Mission11_LGordon.sourcelink.json
