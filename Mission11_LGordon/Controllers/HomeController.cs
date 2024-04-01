@@ -15,13 +15,14 @@ public class HomeController : Controller
     {
         _repo = temp;
     }
-    public IActionResult Index(int pageNum)
+    public IActionResult Index(int pageNum, string Category)
     {
         int pageSize = 10;
         
         var x = new BooksListViewModel
         {
             Books = _repo.Books
+                .Where(x => x.Category == Category || Category == null)
                 .OrderBy(x => x.Title)
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize),
@@ -30,8 +31,12 @@ public class HomeController : Controller
             {
                 CurrentPage = pageNum,
                 ItemsPerPage = pageSize,
-                TotalItems = _repo.Books.Count()
-            }
+                // If statement - if category is null do this, else do that
+                TotalItems = Category == null ? _repo.Books.Count() : _repo.Books.Where(x => x.Category == Category).Count()
+            },
+            
+            CurrentBookCategory = Category
+                
         }
         ;
         return View(x);

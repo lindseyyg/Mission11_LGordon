@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Mission11_LGordon.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,7 +32,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute("pagination", "Books/{pagenum}", new {Controller = "Home", action = "Index"});
+app.MapControllerRoute("pagenumandtype", "{Category}/{pageNum}", new {Controller = "Home", action = "Index"}); 
+// does it in an if else order - so if the first line of arranging your url works, it won't even look at the next one
+app.MapControllerRoute("Category", "{Category}",new { Controller = "Home", action = "Index", pageNum = 1 });
+app.MapControllerRoute("pagination", "{pagenum}", new {Controller = "Home", action = "Index", pageNum = 1}); // what we are passing in, and then the default
 
 app.MapDefaultControllerRoute();
 

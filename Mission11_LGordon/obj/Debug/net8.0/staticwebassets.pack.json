@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/wwwroot/css/taDelete.css",
+      "PackagePath": "staticwebassets/css/taDelete.css"
+    },
+    {
       "Id": "/Users/lindseygordon/RiderProjects/Mission11_LGordon/Mission11_LGordon/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

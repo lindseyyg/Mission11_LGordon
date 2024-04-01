@@ -1,15 +1,60 @@
 @model Book
 
-<div class="card m-1 p-1">
-    <h4>@Model.Title
-        <span class="badge rounded-pill bg-primary text-white float-end"><small>Price: $@Model.Price</small></span>
-    </h4>
-    <ul>
-        <li>Author: @Model.Author</li>
-        <li>Publisher: @Model.Publisher</li>
-        <li>ISBN: @Model.ISBN</li>
-        <li>CLassification: @Model.Classification</li>
-        <li>Category: @Model.Category</li>
-        <li>Page Count: @Model.PageCount</li>
-    </ul>
+@* <div class="card m-1 p-1"> *@
+@*     <h4>@Model.Title *@
+@*         <span class="badge rounded-pill bg-primary text-white float-end"><small>Price: $@Model.Price</small></span> *@
+@*     </h4> *@
+@*     <ul> *@
+@*         <li>Author: @Model.Author</li> *@
+@*         <li>Publisher: @Model.Publisher</li> *@
+@*         <li>ISBN: @Model.ISBN</li> *@
+@*         <li>Classification: @Model.Classification</li> *@
+@*         <li>Category: @Model.Category</li> *@
+@*         <li>Page Count: @Model.PageCount</li> *@
+@*     </ul> *@
+@* </div> *@
+
+
+@* STUFF I LIKE BEST SO FAR *@
+<div class="DashboardCard m-3 p-1">
+    <div class="row">
+    </div>
+    <div class="row SubmissionsGraded">
+        <div class="col" style="font-weight: bold">
+            <p>@Model.Author</p>
+        </div>
+        <div class="col">
+            <p>@Model.Publisher</p>
+        </div>
+        <div class="col">
+            <p>@Model.ISBN</p>
+        </div>
+        <div class="col">
+            <p>@Model.Classification</p>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+@* *@
+@* <div class="card m-1 p-1"> *@
+@*     <div class="row"> *@
+@*     </div> *@
+@*     <div class="row"> *@
+@*         <div class="col"> *@
+@*             <p>@Model.Author</p> *@
+@*         </div> *@
+@*         <div class="col"> *@
+@*             <p>@Model.Publisher</p> *@
+@*         </div> *@
+@*         <div class="col"> *@
+@*             <p>@Model.ISBN</p> *@
+@*         </div> *@
+@*         <div class="col"> *@
+@*             <p>@Model.Classification</p> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
